@@ -1,6 +1,3 @@
-import Data.List
-import Data.Maybe
-
 toDigits :: Integer -> [Integer]
 toDigits 0 = []
 toDigits n
@@ -25,4 +22,4 @@ validate :: Integer -> Bool
 validate 0 = True
 validate n
   | mod (sumDigits(reverse(doubleEveryOther(toDigitsRev(n))))) 10 == 0 = True
-  | otherwise = False
+  | otherwise = False 
